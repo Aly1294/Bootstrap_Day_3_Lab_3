@@ -1,0 +1,90 @@
+// Imported files
+
+@import "_reset.scss";
+
+//  Mixin functions
+
+@mixin my-flex($dir:"row",$justfiy-content:"space-between",$align-item:"center"){
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $justfiy-content;
+    align-items: $align-item;
+}
+
+@mixin my-grid($grid-colomns,$grid-rows,$gap){
+    display: grid;
+    grid-template-columns: $grid-colomns;
+    grid-template-rows: $grid-rows;
+    gap: $gap;
+}
+// Built in function 
+$color-map :( 
+    "even-background-color": rgba(239, 24, 24, 0.878),
+    "odd-background-color": rgb(77, 75, 75),
+);
+
+
+
+
+// Header
+header {
+    background-color: rgb(81, 80, 80);
+    height: 3rem;
+    .header_container{
+        @include my-flex(row,space-between,center);
+        padding: 1rem 3rem;
+        height: 100%;
+        padding-top: 2rem;
+
+        // border:2px solid red;
+    
+        .pChild_in_header_container{
+            color:white;
+            margin-left: 2.5rem;
+            // padding-left: 3rem;
+            width: 10%;
+            font-size: 25px;
+            // border:2px solid red;
+            }
+        nav{
+            width: 65%;
+            margin-right: -4rem;
+            // border:2px solid rgb(18, 5, 5);
+            ul{
+                // border:2px solid red;
+                width: 100%;
+                list-style: none;
+                @include my-flex(row,center,center);
+                li{
+        
+                    padding: 0.2rem 1rem 0.2rem 1rem ;
+                    span{
+                        color: white;
+                        opacity: 1;
+                    }
+                    a{
+                        color: rgba(255,255,255,0.5);
+                        font-size: 18px;
+                        // opacity: .5;
+                        text-decoration: none;
+                    }
+                }
+                li:first-child{
+                    border-left: .19rem solid gray;
+                    span a{
+                        color: rgba(255, 255,255,1);
+                    }
+                }
+                
+
+            
+            }
+
+        }
+    }
+    
+    
+
+    
+
+}

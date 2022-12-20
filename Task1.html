@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Day_3 Task 1</title>
+    <link rel="stylesheet" href="/Icons/style.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+
+
+<body>
+    <div style="height:60vh;" class="container p-0 text-white">
+        
+        <!-- upper div -->
+        <div style="height:70%;" class="d-flex">
+
+            <img class="w-25 d-block" src="/Images/1.jpeg" alt="">
+            <section  class="border w-100 sec">
+                <div style="height:100%;">
+
+                    <div style="height:30%;" class="d-flex align-items-center text-center bg-dark">
+                        <h1 class="w-50">Jhon Doe</h1>
+                        <div class=" d-flex justify-content-around align-items-center w-50">
+                            <i class="fs-4 icon-twitter"></i>
+                            <i class="fs-4 icon-facebook2"></i>
+                            <i class="fs-4 icon-instagram"></i>
+                            <i class="fs-4 icon-github1"></i>
+                        </div>
+                    </div>
+    
+    
+                    <div style="height:20%;" class="px-5 py-3 bg-black">
+                        Experienced Full Stack Web Deveolopment
+                    </div>
+    
+    
+                    <div style="height:40%;">
+                        <div style="height:100%;" class="btn-group div w-100">
+                            <button onclick="do_something(this)" style="height:21vh;" id="btn1" class=" btn btn-primary w-25" type="button" data-bs-toggle="collapse" data-bs-target="#home">
+                                <i class="fs-2 icon-home"></i>
+                                <p>Home</p>
+                              </button>
+                              <button onclick="do_something(this)" style="height:21vh;" id="btn2" class=" btn btn-success w-25 " type="button" data-bs-toggle="collapse" data-bs-target="#resume">
+                                <i class="fs-2 icon-hat"></i>
+                                <p>Resume</p>
+                              </button>
+                              <button onclick="do_something(this)" style="height:21vh;" id="btn3" class=" btn btn-warning w-25 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#work" >
+                                <i class="fs-2 icon-folder-open"></i>
+                                <p>Work</p>
+                              </button>
+                              <button onclick="do_something(this)" style="height:21vh;" id="btn4" class=" btn btn-danger w-25" type="button" data-bs-toggle="collapse" data-bs-target="#contact" >
+                                <i class="fs-2 icon-envelope-o"></i>
+                                <p>Contact</p>
+                              </button>
+                        </div>
+                    </div>
+    
+                </div>
+            </section>
+
+        </div>
+
+
+
+
+         <!-- Collapse Divs -->
+
+        <!-- Collapse Home -->
+
+         <div class="collapse " id="home">
+            <div class="bg-primary p-3">
+                <h2>Home</h2>
+                <p >Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+            </div>
+            <div class="border">
+                <div class="pt-4 px-4  text-dark ">
+                    <h2>My Skills</h2>
+                    <p >Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                </div>
+                <div class="container text-dark fw-bold">
+                    <div class="">HTML 5</div>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" aria-label="Basic example" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <br>
+                    <div class="">CSS 3</div>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" aria-label="Basic example" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    <br>
+                    <div class="">JavaScript</div>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" aria-label="Basic example" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <br>
+                    <div class="">PHP</div>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" aria-label="Basic example" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <br>
+                    <div class="">Python</div>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" aria-label="Basic example" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <br>
+
+                </div>
+                    
+    
+            </div>
+        </div>
+
+        <!-- Collapse Resume -->
+        <div class="collapse " id="resume">
+            <div class="bg-success p-3">
+                <h2>Resume</h2>
+                <p >Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+            </div>
+            <div class="py-4 px-4  text-dark border">
+                <h2>What Have I Worked ?</h2>
+                <p >Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <!-- Card 1 -->
+                    <div style="width:33%;" class="card ">
+                        
+                        <div class="card-body">
+                          <h5 class="card-title">Devmasters</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <div class="bg-dark text-white p-2 my-2">Position: Full Stack Deveolopment</div>
+                          <div class="bg-dark text-white p-2 ">Phone: (444) 444-4444</div>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted">Dates:2015 - 2018</small>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div style="width:33%;" class="card ">
+                        
+                        <div class="card-body">
+                          <h5 class="card-title">123 Designers</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <div class="bg-dark text-white p-2 my-2">Position: Web Designer</div>
+                          <div class="bg-dark text-white p-2 ">Phone: (222) 222-2222</div>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted">Dates:2013 - 2015</small>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div style="width:33%;" class="card w-25">
+                        
+                        <div class="card-body">
+                          <h5 class="card-title">Web Designers Pros</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <div class="bg-dark text-white p-2 my-2">Position: Web Designer</div>
+                          <div class="bg-dark text-white p-2 ">Phone: (333) 333-3333</div>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted">Dates:2010 - 2013</small>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Collapse Work -->
+        <div class="collapse " id="work">
+            <div class="bg-warning p-3">
+                <h2>Work</h2>
+                <p >Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+            </div>
+            <div class="py-4 px-4  text-dark border">
+                <h2>What Have I Built ?</h2>
+                <p >Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <img style="height:60vh; width:20%;" src="/Images/6.jpg" alt="">
+                    <img style="height:60vh; width:20%;" src="/Images/2.webp" alt="">
+                    <img style="height:60vh; width:20%;" src="/Images/6.jpg" alt="">
+                    <img style="height:60vh; width:20%;" src="/Images/2.webp" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- Collapse Contact -->
+        <div class="collapse" id="contact">
+            <div class="bg-danger p-3">
+                <h2>Contact</h2>
+                <p >Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+            </div>
+            <div class="py-4 px-4  text-dark border">
+                <h2>Get In Touch</h2>
+                <p >Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                <div class="input-group mb-3">
+                    <span class="input-group-text bg-danger" id="basic-addon1"><i class="icon-user text-white"></i></span>
+                    <input type="text" class="form-control bg-dark" placeholder="Name" >
+                </div>
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text bg-danger" id="basic-addon1"><i class="icon-envelope-o text-white"></i></span>
+                    <input type="text" class="form-control bg-dark" placeholder="Email" >
+                </div>
+
+                <div class="input-group mb-3">
+                    <span style="height:8vh;" class="input-group-text bg-danger" id="basic-addon1"><i class="icon-pencil text-white"></i></span>
+                    <input style="height:8vh; " type="text" class="form-control bg-dark" placeholder="Name" >
+                </div>
+
+                <button class="btn btn-danger w-100">Submit</button>
+            </div>
+        </div>
+
+        <!-- dark div under the image that contain button -->
+        <div style="height:30%;" class="bg-dark text-white">
+           
+           <button class="btn text-white mt-5 mx-5 bg-transparent border ">
+                <i class="me-2 icon-cloud"></i>
+                <span>Download Resume</span>
+            </button>
+        </div>
+
+       
+    </div>
+
+
+
+
+
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="/Task1.js"></script>
+</body>
+</html>
